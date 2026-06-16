@@ -1,0 +1,2 @@
+import { Shell } from '@/components/shell';
+export default function Settings(){return <Shell><h1 className="text-3xl font-black mb-6">Impostazioni</h1><div className="grid md:grid-cols-2 gap-4"><div className="card p-6"><h2 className="font-black">Integrazioni</h2><p className="text-slate-500 mt-2">Google Calendar, WhatsApp Business Cloud API, Meta Lead Ads, OpenAI.</p></div><div className="card p-6"><h2 className="font-black">Ruoli e permessi</h2><p className="text-slate-500 mt-2">Super Admin, Admin azienda, Manager, Commerciale.</p></div></div></Shell>}

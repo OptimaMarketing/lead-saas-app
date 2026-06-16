@@ -1,0 +1,3 @@
+import { Shell } from '@/components/shell';
+import { Bot } from 'lucide-react';
+export default function AI(){const insights=['Le lead Meta hanno conversione +18% rispetto a Google negli ultimi 30 giorni.','Il collo di bottiglia principale è tra Contattato e Appuntamento.','Redistribuire 22 lead freddi da Andrea a Sara può aumentare il forecast del 9%.','7 lead caldi non sono stati contattati nelle ultime 24 ore.'];return <Shell><h1 className="text-3xl font-black mb-6">AI Insights</h1><div className="grid md:grid-cols-2 gap-4">{insights.map(i=><div className="card p-6" key={i}><Bot className="text-emerald"/><p className="font-bold mt-3">{i}</p><button className="btn-dark mt-5">Applica suggerimento</button></div>)}</div></Shell>}

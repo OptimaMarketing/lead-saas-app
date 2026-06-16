@@ -1,0 +1,8 @@
+import { Shell } from '@/components/shell';
+import { Trophy } from 'lucide-react';
+
+export default function Gamification(){return <Shell>
+  <h1 className="text-3xl font-black mb-6">Gamification</h1>
+  <div className="grid xl:grid-cols-3 gap-5"><div className="card p-6 xl:col-span-2 bg-gradient-to-br from-emerald to-mint text-white"><div className="flex justify-between"><div><p className="font-bold opacity-80">Obiettivo mensile</p><h2 className="text-4xl font-black mt-2">€ 60.000</h2><p className="mt-2">€ 48.750 raggiunti</p></div><div className="h-28 w-28 rounded-full border-[10px] border-white/40 grid place-items-center text-2xl font-black">81%</div></div></div><div className="card p-6 bg-ink text-white"><Trophy className="text-amber"/><h2 className="text-2xl font-black mt-3">2° posto</h2><p className="text-slate-300">980 XP questo mese</p></div></div>
+  <div className="mt-5 grid md:grid-cols-2 gap-5"><div className="card p-6"><h2 className="font-black mb-4">Classifica</h2>{['Marco Bianchi 1250 XP','Alessia Rossi 980 XP','Luca Moretti 870 XP','Giulia Romano 540 XP'].map((x,i)=><p className="flex justify-between py-3 border-b border-slate-100" key={x}><span>{['🥇','🥈','🥉','4'][i]} {x.split(' ').slice(0,2).join(' ')}</span><b>{x.split(' ').slice(2).join(' ')}</b></p>)}</div><div className="card p-6"><h2 className="font-black mb-4">Premi disponibili</h2>{['Bonus €500 al raggiungimento di 100 vendite','Gift card Amazon 150€ per Top Performer','Badge Champion per 30 giorni consecutivi'].map(x=><div className="rounded-2xl bg-slate-50 p-4 mb-3 font-bold" key={x}>{x}</div>)}</div></div>
+</Shell>}

@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{--bg:#F6F8FB;--ink:#07111F;--muted:#64748B;--line:#E5EAF2;--emerald:#10B981;--mint:#14D9A5;--amber:#F59E0B;}
+*{box-sizing:border-box} body{background:radial-gradient(circle at 20% 0%,rgba(20,217,165,.08),transparent 28%),var(--bg);color:var(--ink)}
+a{text-decoration:none}.card{@apply bg-white/90 rounded-[24px] shadow-soft border border-slate-100}.btn{@apply rounded-2xl px-4 py-3 font-bold transition active:scale-[.98]}.btn-primary{@apply btn bg-emerald text-white shadow-glow}.btn-dark{@apply btn bg-ink text-white}.chip{@apply rounded-full px-3 py-1 text-xs font-bold}.input{@apply w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none focus:ring-2 focus:ring-emerald/30}.mobile-safe{padding-bottom:88px}@media(min-width:768px){.mobile-safe{padding-bottom:0}}
